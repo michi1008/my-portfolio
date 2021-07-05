@@ -1,0 +1,117 @@
+.home {
+  background-color: $color-secondary-dark;
+  grid-column: full-start/full-end;
+  position: relative;
+  padding: 3rem;
+  -webkit-clip-path: polygon(
+    0% 10%,
+    0% 90%,
+    50% 100%,
+    100% 90%,
+    100% 10%,
+    50% 0%
+  );
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+
+  @media only screen and (max-width: $bp-small) {
+    height: 20rem;
+  }
+  &__video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    opacity: 0.4;
+    overflow: hidden;
+  }
+
+  &__video-content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    place-items: center;
+    min-height: 20rem;
+    top: 20%;
+  }
+
+  &__title {
+    color: $color-tertiary-yellow;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 0;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+  }
+
+  &__subtitle {
+    color: $color-tertiary-yellow;
+    font-weight: 700;
+    font-style: italic;
+    padding-top: 2rem;
+    font-size: 3rem;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    &__title {
+      font-size: 3.5rem;
+    }
+    &__subtitle {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    &__title {
+      font-size: 2rem;
+    }
+    &__subtitle {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    &__title {
+      font-size: 1rem;
+    }
+    &__subtitle {
+      font-size: 0.8rem;
+    }
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

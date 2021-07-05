@@ -1,0 +1,28 @@
+.footer {
+  grid-column: full-start/full-end;
+  background-color: $color-primary-dark;
+
+  &__social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  &__social-icon {
+    color: $color-white;
+    margin: 2rem;
+  }
+
+  p {
+    color: $color-white;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 0.8rem;
+  }
+}

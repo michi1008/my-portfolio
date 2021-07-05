@@ -1,0 +1,119 @@
+// color variables
+$color-primary-light: #74bec1;
+$color-primary-dark: #516091;
+
+$color-secondary-light: #5fbdb0;
+$color-secondary-dark: #3c9099;
+
+$color-tertiary-yellow: #dddddd;
+$color-tertiary-pink: #d9adad;
+
+$color-white: #fff;
+$color-black: black;
+
+// font variables
+$font-primary: "Ubuntu", sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5;
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-primary-dark;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 0.25rem;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: $font-primary;
+}
+
+h1 {
+  font-size: 3.5rem;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.5rem;
+  }
+}
+h2 {
+  font-size: 2.5rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.5rem;
+  }
+}
+h3 {
+  font-size: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 0.8rem;
+  }
+}
+
+p {
+  margin-top: 1.2rem;
+  color: $color-primary-dark;
+  font-size: 1.2rem;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 0.8rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 0.6rem;
+  }
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(8, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr)
+    [full-end];
+}

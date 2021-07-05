@@ -1,0 +1,110 @@
+.skills {
+  background-color: $color-primary-dark;
+  grid-column: full-start/full-end;
+  padding: 4rem;
+
+  &__title {
+    color: $color-white;
+    font-size: 3rem;
+    margin-left: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2rem;
+      margin-left: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1rem;
+      margin-left: 1rem;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 2.5rem 2rem;
+
+    &__frontend {
+      grid: 1/2;
+      font-size: 2rem;
+      color: $color-primary-light;
+      padding-bottom: 1rem;
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1rem;
+      }
+    }
+
+    &__backend {
+      grid: 2/3;
+      font-size: 2rem;
+      color: $color-primary-light;
+      padding-bottom: 1rem;
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1rem;
+      }
+    }
+
+    & h4 {
+      color: $color-white;
+      @media only screen and (max-width: $bp-small) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.skill {
+  background: $color-white;
+  height: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: 1rem;
+
+  &__value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $color-secondary-light;
+    height: 100%;
+    width: 50%;
+    border-radius: 0.5rem;
+  }
+
+  &__value-70 {
+    width: 70%;
+  }
+
+  &__value-60 {
+    width: 60%;
+  }
+
+  &__value-50 {
+    width: 50%;
+  }
+
+  &__text {
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    -webkit-trasnform: translateX(-50%);
+    transform: translateX(-50%);
+    color: $color-white;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0.8rem;
+    }
+  }
+  &__text-70 {
+    left: 70%;
+  }
+
+  &__text-60 {
+    left: 60%;
+  }
+
+  &__text-50 {
+    left: 50%;
+  }
+}
