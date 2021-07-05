@@ -8,14 +8,6 @@
     overflow: hidden;
     width: 90vw;
     height: 120vh;
-
-    @media only screen and (max-width: $bp-medium) {
-      height: 120vh;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-      height: 100vh;
-    }
   }
 
   &__slide {
@@ -67,7 +59,7 @@
   }
 
   &__slide-content-me {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: $color-tertiary-yellow;
     grid-column: 1/7;
     grid-row: 2/7;
@@ -75,12 +67,10 @@
     padding: 0 1.5rem;
     @media only screen and (max-width: $bp-largest) {
       font-size: 1rem;
-      padding: 0 1.5rem;
     }
 
     @media only screen and (max-width: $bp-medium) {
       font-size: 1rem;
-      padding: 0 1.5rem;
     }
 
     @media only screen and (max-width: $bp-small) {

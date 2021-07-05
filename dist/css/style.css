@@ -50,6 +50,15 @@ h3 {
     h3 {
       font-size: 0.8rem; } }
 
+h4 {
+  font-size: 1.5rem; }
+  @media only screen and (max-width: 50em) {
+    h4 {
+      font-size: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    h4 {
+      font-size: 0.8rem; } }
+
 p {
   margin-top: 1.2rem;
   color: #516091;
@@ -349,7 +358,7 @@ a {
     width: 50%; }
   .skill__text {
     position: absolute;
-    top: -0.5rem;
+    top: -0.2rem;
     left: 50%;
     -webkit-trasnform: translateX(-50%);
     transform: translateX(-50%);
@@ -505,12 +514,6 @@ a {
     overflow: hidden;
     width: 90vw;
     height: 120vh; }
-    @media only screen and (max-width: 50em) {
-      .about__slide-container {
-        height: 120vh; } }
-    @media only screen and (max-width: 37.5em) {
-      .about__slide-container {
-        height: 100vh; } }
   .about__slide {
     position: absolute;
     width: 100%;
@@ -552,7 +555,7 @@ a {
         font-size: 1rem;
         grid-column: 3/7; } }
   .about__slide-content-me {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #dddddd;
     grid-column: 1/7;
     grid-row: 2/7;
@@ -560,12 +563,10 @@ a {
     padding: 0 1.5rem; }
     @media only screen and (max-width: 75em) {
       .about__slide-content-me {
-        font-size: 1rem;
-        padding: 0 1.5rem; } }
+        font-size: 1rem; } }
     @media only screen and (max-width: 50em) {
       .about__slide-content-me {
-        font-size: 1rem;
-        padding: 0 1.5rem; } }
+        font-size: 1rem; } }
     @media only screen and (max-width: 37.5em) {
       .about__slide-content-me {
         font-size: 0.8rem;

@@ -15,8 +15,9 @@
   },
   "author": "Michiko",
   "license": "ISC",
-  "homepage":"https://michi1008/my-portfolio",
-  "dependencies": {  
+  "homepage": "https://michi1008/my-portfolio",
+  "dependencies": {
+    "gh-pages": "^3.2.3",
     "node-sass": "^6.0.0"
   }
 }
