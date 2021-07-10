@@ -271,6 +271,11 @@ a {
       font-size: 1rem; }
     .home__subtitle {
       font-size: 0.8rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .home__title {
+      font-size: 0.8rem; }
+    .home__subtitle {
+      font-size: 0.8rem; } }
 
 @keyframes moveInRight {
   0% {
