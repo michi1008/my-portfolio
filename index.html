@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <title>Michiko Taguchi</title>
+</head>
+
+<body class="container">
+  <!--navbar-->
+  <nav class="nav" id="nav">
+    <div class="nav__center">
+      <!--nav header -->
+      <div class="nav__header">
+        <a href="index.html" target="_blank">
+          <img src="images/logo.png" alt="nav logo" class="nav__logo" />
+        </a>
+        <button class="nav__btn" id="nav-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- nav-links -->
+      <ul class="nav__links">
+        <li>
+          <a href="#section1">home</a>
+        </li>
+        <li>
+          <a href="#section2">about</a>
+        </li>
+        <li>
+          <a href="#section3">projects</a>
+        </li>
+        <li>
+          <a href="#section4">skills</a>
+        </li>
+        <li>
+          <a href="#section5">contact</a>
+        </li>
+        <li>
+          <a href="indexja.html" target="_blank"><img class="nav__lang" src="images/japan-flag.png"
+              alt="japan-flag" /></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--end of navbar -->
+  <!-- sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div>
+      <button class="sidebar__close-btn" id="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="sidebar__links">
+        <li class="sidebar__link">
+          <a href="#section1">home</a>
+        </li class="sidebar__link">
+        <li>
+          <a href="#section2">about</a>
+        </li class="sidebar__link">
+        <li>
+          <a href="#section3">projects</a>
+        </li class="sidebar__link">
+        <li class="sidebar__link">
+          <a href="#section4">skills</a>
+        </li >
+        <li class="sidebar__link">
+          <a href="#section5">contact</a>
+        </li>
+        <li>
+          <a href="indexja.html" target="_blank"><img class="sidebar__lang" src="images/japan-flag.png" alt="japan-flag" /></a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- home -->
+  <div id="section1" class="home">
+    <div class="home__video">
+      <video class="home__video-content" autoplay muted loop>
+        <source src="images/Pexels Videos 1994828.mp4" type="video/mp4">
+        Your browser is not supported.
+      </video>
+    </div>
+    <div class="home__content">
+      <h1 class="home__title">Hi, I'm Michiko Taguchi</h1>
+      <h2 class="home__subtitle">Web developer</p>
+    </div>
+  </div>
+
+  <!-- about -->
+  <div id="section2" class="about">
+    <div class="about__slide-container">
+      <div class="about__slide">
+        <i class="far fa-laugh-wink about__slide-icon"></i>
+        <h1 class="about__slide-title">About me</h1>        
+        <p class="about__slide-content-me">I'm seeking a new opportunity to work as a front end developer. Until three
+          years ago, I didn't even know how to use a command line. To implement automation at work, I started learning
+          Python at first. The moment the automation was successful, I got goosebumps, which made me want to continue
+          learning and gaining more technical skills. <br><br>To fully understand OOP, I also learned Java. Additionally, I
+          learned basic data structure and SQL. To apply what I learned, I created two web applications: one with
+          Python, Flask and PostgreSQL and another with Java, Spring and PostgreSQL. However, I got frustrated by the
+          fact that I hardly knew anything about the front end. So, then I learned HTML, CSS, JavaScript and React and
+          created more web applications. <br><br>When coding web applications, I get so immersed, I even forget to eat
+          sometimes. I would be extremely happy if I can use this passion for development to make a living. I am able to
+          learn new things quickly and I also have good people skills. I am confident that I will be a great asset to
+          your organization!<br><br></p>
+      </div>
+      <div class="about__slide">
+        <i class="fas fa-user-graduate about__slide-icon"></i>
+        <h1 class="about__slide-title">About education</h1>
+        <p class="about__slide-content-education">I have a bachelor's degree in Economics and Political Science from
+          Meiji University, Tokyo Japan and two master's degrees in MBA and Translation. My MBA is from Sasin Graduate
+          Institute of Business Administration of Chulalongkorn University, Bangkok Thailand. And I got another master
+          from Middlebury Institute of International Studies at Monterey, California, USA. To acquire technical skills,
+          I took about 30 Udemy online courses and watched a lot of YouTube tutorial videos.</p>
+        <img src="images/meiji.png" alt="Meiji university logo" class="about__slide-img-meiji">
+        <img src="images/sasin.jpg" alt="Sasin gradualte school logo" class="about__slide-img-sasin">
+        <img src="images/miis.png" alt="Middlebury Institue of International Studies logo" class="about__slide-img-miss">
+      </div>
+      <div class="about__slide">
+        <img src="images/hike.jpg" alt="hike" class="about__slide-img-hike">
+        <i class="fas fa-running about__slide-icon"></i>
+        <h1 class="about__slide-title">About activity</h1>
+        <p class="about__slide-content-activity">I love hiking with my friends. Hiking is the best way to mingle with
+          other people and work out. It is super fun to have lunch in a beautiful natural setting with my friends. For
+          my
+          regular worktout, I usually run 5.5 miles each morning. This gives me a lot of energy and discipline. <br><br>In 2019,
+          I
+          ran a marathon for the first time in my life. This was quite a good experience. While running, my mind often
+          wanders to think about coding, though.</p>
+      </div>
+    </div>
+    <div class="about__btn-container">
+      <button type="button" id="prevBtn">
+        <i class="fas fa-arrow-circle-left about__btn-icon"></i>
+      </button>
+      <button type="button" id="nextBtn">
+        <i class="fas fa-arrow-circle-right about__btn-icon"></i>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- projects -->
+  <div id="section3" class="projects">
+    <div class="projects__title">
+      <h2>My Projects</h2>
+      <div class="underline"></div>
+    </div>
+    <div class="projects__items">
+      <!-- single project-->
+      <a class="projects__item-1" target="_blank" href="https://meditation-world.netlify.app/">
+        <article class="project">
+          <img class="project__img" src="images/web/meditation.PNG" alt="projectURL">
+          <div class="project__info">
+            <h3 class="project__title">Meditation World</h3>
+            <p class="project__intro">This website is for meditation. Users can select a duration and sound.
+            </p>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+      <!-- single project-->
+      <a class="projects__item-2" target="_blank" href="https://recipeshareapp.herokuapp.com/">
+        <article class="project">
+          <img class="project__img" src="images/web/recipe-share.PNG" alt="projectURL">
+          <div class="project__info">
+            <h3 class="project__title">Share Recipe App</h3>
+            <p class="project__intro">This is a MERN project. Users can share their own recipes.</p>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+      <!-- single project-->
+      <a class="projects__item-3" target="_blank" href="https://currentweather-api.netlify.app/">
+        <article class="project">
+          <img class="project__img" src="images/web/weather.PNG" alt="projectURL">
+          <div class="project__info">
+            <h3 class="project__title">Weather App</h3>
+            <p class="project__intro">This is a simple weather app. The default is set to New York City and Imperial
+              Unit.<br>
+              Users can change the location and units. <br>I used Local Storage to save the location and unit that users
+              select.
+            </p>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+      <!-- single project-->
+      <a class="projects__item-4" target="_blank" href="https://shoewonder-reactapp.netlify.app/">
+        <article class="project">
+          <img class="project__img" src="images/web/shoe-wonder.PNG" alt="projectURL">
+          <div class="project__info">
+            <h3 class="project__title-small">Shoe Wonder</h3>
+            <p class="project__intro-small">This site was created by Commerce.js, React, React-material, and Stripe. <br>I
+              deployed on
+              Netlify.</p>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+      <!-- single project-->
+      <a class="projects__item-5" target="_blank" href="https://ken-collage-art.herokuapp.com/">
+        <article class="project">
+          <img class="project__img" src="images/web/ken-art.PNG" alt="projectURL">
+          <div class="project__info">
+            <h3 class="project__title-small">Ken Collage Art</h3>
+            <p class="project__intro-small">This is a website to sell digital art, created by React, Redux, Firebase.</p>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+      <!-- single project-->
+      <a class="projects__item-6" target="_blank" href="https://trivia-quiz-site.netlify.app/">
+        <article class="project">
+          <img class="project__img" src="images/web/trivia-quiz.PNG" alt="projectURL">
+          <div class="project__info">
+            <h3 class="project__title-small">Trivia-Quiz</h3>
+            <p class="project__intro-small">This is the trivia quiz website. I get all quizes using API. Users can select number of questions, category and difficulty.</p>
+          </div>
+        </article>
+      </a>
+      <!-- end of single project -->
+    </div>
+  </div>
+
+  <!-- skills -->
+  <div id="section4" class="skills">
+    <div class="skills__title">
+      <h2>Skills</h2>
+    </div>
+    <div class="skills__container">
+      <!-- front end -->
+      <article>
+        <h3 class="skills__container__frontend">Front End</h3>
+        <!-- single skill -->
+        <h4>HTML/CSS</h4>
+        <div class="skill">
+          <div class="skill__value skill__value-70"></div>
+          <p class="skill__text skill__text-70">70%</p>
+        </div>
+        <!-- single skill -->
+        <h4>Javascript</h4>
+        <div class="skill">
+          <div class="skill__value skill__value-70"></div>
+          <p class="skill__text skill__text-70">70%</p>
+        </div>
+        <!-- single skill -->
+        <h4>React</h4>
+        <div class="skill">
+          <div class="skill__value skill__value-60"></div>
+          <p class="skill__text skill__text-60">60%</p>
+        </div>
+        <!-- single skill -->
+        <h4>Redux</h4>
+        <div class="skill">
+          <div class="skill__value skill__value-50"></div>
+          <p class="skill__text skill__text-50">50%</p>
+        </div>
+      </article>
+      <!-- back end -->
+      <article>
+        <h3 class="skills__container__backend">Back End</h3>
+        <!-- single skill -->
+        <h4>Node</h4>
+        <div class="skill">
+          <div class="skill__value skill__value-70"></div>
+          <p class="skill__text skill__text-70">70%</p>
+        </div>
+        <!-- single skill -->
+        <h4>Java</h4>
+        <div class="skill">
+          <div class="skill__value skill__value-60"></div>
+          <p class="skill__text skill__text-60">60%</p>
+        </div>
+        <!-- single skill -->
+        <h4>Python</h4>
+        <div class="skill">
+          <div class="skill__value skill__value-70"></div>
+          <p class="skill__text skill__text-70">70%</p>
+        </div>
+        <!-- single skill -->
+        <h4>PHP</h4>
+        <div class="skill">
+          <div class="skill__value skill__value-50"></div>
+          <p class="skill__text skill__text-50">50%</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div id="section5" class="contact contact__center">
+    <article class="contact__info">
+      <div class="contact__underline"></div>
+      <h1>I'm Michiko</h1>
+      <a class="contact__btn" target="_blank" href="mailto:michytaguchi@gmail.com">CONTACT ME</a>
+      <p>You can download my resume from <a class="contact__resume" target="_blank"
+          href="Michiko_Taguchi_Resume.pdf">here!</a></p>
+      <div class="contact__underline"></div>
+    </article>
+    <article id="imgContainer" class="contact__img-container">
+      <img class="contact__img" src="./images/profile.jpg" alt="michiko taguchi">
+    </article>
+  </div>
+
+  <!-- fotter -->
+  <footer class="footer">
+    <!-- social icons-->
+    <ul class="footer__social-icons">
+      <li>
+        <a href="https://www.linkedin.com/in/michikotaguchi/" class="footer__social-icon">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/michi1008" class="footer__social-icon">
+          <i class="fab fa-github-square fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+    <p>&copy; <span id="date"></span> michiko taguchi. all rights reserved</p>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
